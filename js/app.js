@@ -2,8 +2,8 @@ let searchString = "";
 let searchBar = document.querySelector(".search>input");
 let searchButton = document.querySelector(".search>button");
 let form = document.querySelector(".search");
-let geocoderURL = "http://api.openweathermap.org/geo/1.0/direct";
-let forecastURL = "https://api.openweathermap.org/data/2.5/weather"
+let geocoderURL = "//api.openweathermap.org/geo/1.0/direct";
+let forecastURL = "//api.openweathermap.org/data/2.5/weather"
 let weatherBody = document.querySelector("article");
 
 
@@ -30,7 +30,7 @@ async function setResults(lat, lon, city) {
     let cityName = document.querySelector(".city-name");
     let temperature = document.querySelector(".temp");
     let description = document.querySelector(".description");
-    image.src = `http://openweathermap.org/img/w/${forecastData.weather[0].icon}.png`;
+    image.src = `//openweathermap.org/img/w/${forecastData.weather[0].icon}.png`;
     cityName.textContent = city;
     temperature.textContent = `${forecastData.main.temp}`;
     description.textContent = forecastData.weather[0].description;
