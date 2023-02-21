@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #D4ECDD;
+    height: 100vh;
+    position: relative;
+}
+header {
+    background: linear-gradient(#112031, #152D35a8), url("https://akm-img-a-in.tosshub.com/aajtak/images/story/202103/weather-111-sixteen_nine.jpg?size=948:533");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100vh;
+    position: relative;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0.8% 1.2%;
+    font-size: 1.1rem;
+}
+.search {
+    position: relative;
+    justify-self: center;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search>input {
+    box-sizing: border-box;
+    height: 2.5rem;
+    margin: 0 3px;
+    flex: 2 1;
+    border: 2px solid #112031;
+    background: #1b3149cf;
+    font-size: 1.1rem;
+    color: #345B63;
+    padding: 5px;
+    border-radius: 4px;
+}
+.search>button {
+    box-sizing: border-box;
+    height: 2.5rem;
+    margin: 0 3px;
+    flex: 1 1;
+    border: none;
+    background: #345B63;
+    color: #112031;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 0.4s transform, 0.4s box-shadow, 0.4s background, 0.4s color;
+}
+.search>button:hover {
+    transform: translate(0, -1.3px);
+    box-shadow: 0 1.3px 3px -1px grey;
+    background: #457883;
+    color: #1b2838;
+}
+.search-results {
+    width: 90%;
+    padding: 5%;
+    height: 30vh;
+    overflow-y: scroll;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    z-index: 1;
+    background: #345B63c8;
+    border-radius: 5px;
+}
+.search-data {
+    display: block;
+    background: transparent;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid #345b63d9;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: #D4ECDD;
+    transition: 0.2s;
+}
+.search-data:hover {
+    color: #fafffc;
+}
+.search-data:active {
+    color: #fff;
+    font-size: 1.2rem;
+}
+ul {
+    justify-self: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+}
+a {
+    padding: 0 0.4rem;
+    text-decoration: none;
+    color: #345B63;
+    transition: 0.4s;
+}
+i {
+    font-size: 3rem;
+}
+a:hover {
+    text-decoration: 1px underline #507e87;
+    color: #507e87;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h1, h2 {
+    margin: 0;
+    line-height: 1.5;
+}
+article {
+    width: 300px;
+    padding: 4%;
+    border: 1px solid #112031;
+    border-radius: 3px;
+    background-color: #345b63b4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.brand {
+    justify-self: left;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+img {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+#contact {
+    background: #112031;
+    padding: 4% 10%;
+    width: 80%;
+}
